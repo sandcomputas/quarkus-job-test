@@ -1,5 +1,6 @@
 package dev.sondre
 
+import io.quarkus.logging.Log
 import io.quarkus.runtime.Quarkus
 import io.quarkus.runtime.QuarkusApplication
 import io.quarkus.runtime.annotations.QuarkusMain
@@ -16,7 +17,7 @@ class Job : QuarkusApplication {
     lateinit var w: Worker
 
     override fun run(vararg args: String?): Int {
-        println("Starting to do work, I promise!")
+        Log.info("Starting to do work, I promise!")
         w.doWork()
         return 0
     }
