@@ -1,8 +1,8 @@
 # demo
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## Create GCP resources
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+The relevant GCP resources are created/updated by running the `build-push-and-deploy.sh` and `create-scheduler.sh` shell scripts.
 
 ## Running the application in dev mode
 
